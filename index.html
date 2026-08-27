@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">https://github.com/vvsiqs7/alura/blob/main/index.html
-<title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
   <style>
-    header{
-      background-color: #FFC0CB;
-    color: #EE82EE;
+    header {
+      background-color: #183C63;
+      color: #FFFFFF;
       text-align: center;
       max-width: 800px;
       margin: 0 auto;
+      padding: 16px;
     }
-    main{
-      background-color: #EE82EE;
-      color: #FFC0CB;
+
+    main {
+      background-color: #FFFFFF;
+      color: #183C63;
       max-width: 800px;
       margin: 0 auto;
+      padding: 16px;
+      display: flex;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .artigo-autor {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-<h1>Meu blog anime</h1>
-<p>Vou compartilhar conhecimentos sobre animes japoneses</p>
+    <h1>Meu blog anime</h1>
+    <p>Vou compartilhar conhecimentos sobre animes</p>
   </header>
-<main> 
-  <h2>Meu primeiro post</h2>
-  <p>Por: Maria Eduarda Siqueira
-  <p>Boas-Vindas ao meu Blog, aqui eu vou compartilhar curiosidades na área dos animes.</p>
-</main>
+
+  <main>
+    <img file:///home/escola/Downloads/Gemini_Generated_Image_9sfunr9sfunr9sfu%20(1).png.">
+    
+    <div>
+      <h2>Meu primeiro post</h2>
+      <p class="artigo-autor">Por: Marcelo Paludetto</p>
+      <p>Boas vindas ao meu blog, aqui vou compartilhar curiosidades sobre animes.</p>
+      <button>❤️ <span>0</span></button>
+    </div>
+  </main>
+
+  <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao){
+      botao.addEventListener("click", botaoClicado);
+      function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+      }
+    });
+  </script>
 </body>
 </html>
