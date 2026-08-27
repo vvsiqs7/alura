@@ -41,8 +41,19 @@
     <h2>Meu blog de anime</h2>
     <p class="artigo-autor">Por: Maria Eduarda Siqueira Lopes
     <p>Boas-vindas ao meu blog! Aqui vou compartilhar curiosidades sobre a cultura dos animes no japão</p>
-        <button>❤️</button>
+        <button>❤️ <span>0</span></button>
       </div>
     </main>  
   </body>
+  <script>
+      const botao = document.querySelector("button");
+      botao.addEventListener("click", botaoClicado):
+
+      fuction botaoClicado(){
+          console.log("fui cliclado");
+          let texto = botao.querySelector("span");
+          texto.textContent++;
+      }
+    
+  </script>
 </html>
